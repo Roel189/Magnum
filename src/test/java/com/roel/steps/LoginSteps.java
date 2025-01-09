@@ -17,11 +17,7 @@ public class LoginSteps {
     private WebDriver driver;
     LoginPage loginPage;
     MainPage mainPage;
-    private WebElement usernameField = driver.findElement(By.id("username"));
-    private WebElement passwordField = driver.findElement(By.id("password"));
-    private WebElement loginButton = driver.findElement(By.id("loginButton"));
-
-    private WebElement errorPasswordMessage = driver.findElement(By.id("errorPasswordMessage"));
+    
 
 
     @Given("que estou na pagina de login")
