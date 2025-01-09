@@ -10,10 +10,18 @@ Feature: Login Functionality
     Given que estou na pagina de login
     When eu insiro um nome de usuario e senha corretos
     And eu clico no botao de login
-    Then devo ser redirecionado para a página inicial
+    Then devo ser redirecionado para a pagina inicial
 
   Scenario: Login falho por credenciais incorretas
     Given que estou na pagina de login
     When eu insiro um nome de usuário e senha incorretos
     And eu clico no botao de login
-    Then an error message "Invalid credentials" is displayed
+    Then mensagem de erro de usuario inexistente
+    And mensagem de erro de senha incorreta
+
+  Scenario: Login falho por senha incorreta
+    Given que estou na pagina de login
+    When eu insiro um nome de usuario corretamente
+    And eu insiro a senha incorretamente
+    And eu clico no botao de login
+    Then mensagem de erro de senha incorreta

@@ -41,6 +41,13 @@
             <artifactId>extentreports</artifactId>
             <version>4.0.9</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.17.0</version>
+        </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
@@ -106,8 +113,7 @@
                 <archive>
                     <manifest>
                         <addClasspath>true</addClasspath>
-                        <!-- <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
-                         <mainClass>com.roel.runner.RunnerCadastroContas</mainClass>-->
+
                     </manifest>
                 </archive>
             </configuration>
